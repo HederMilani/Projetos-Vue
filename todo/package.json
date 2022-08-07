@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "spectre.css": "^0.5.9",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -34,6 +35,9 @@
     },
     "rules": {}
   },
+  "eslint.workingDirectories": [
+    {"mode": "auto"}
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",
