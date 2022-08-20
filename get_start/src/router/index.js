@@ -27,6 +27,11 @@ const routes = [
     name: 'encadernar',
     component: () => import('../views/EncadernarFormulario.vue')
   },
+  {
+    path: '/condicional',
+    name: 'condicional',
+    component: () => import('../views/RenderizacaoCondicional.vue')
+  },
 ]
 
 const router = createRouter({

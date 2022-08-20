@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link> | 
     <router-link to="/hello" >Hello</router-link> | 
     <router-link to="/contador">Contador</router-link> | 
-    <router-link to="/encadernar">Encadernar</router-link>
+    <router-link to="/encadernar">Encadernar</router-link> | 
+    <router-link to="/condicional">Condicional</router-link>
   </nav>
   <router-view/>
 </template>
