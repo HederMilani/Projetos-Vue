@@ -9,31 +9,19 @@
         </div>
       </form>
       <div class="toDo-list">
-        <div v-for="t in toDos" :key="t.id">
-          <div class="title flex-centered">
-            <div class="title-icon">
-              <i class="icon icon-time"></i>
-            </div>
-            <div class="title-content">
-              {{  t.description  }}
-            </div>
-            <div class="title-action">
-              <button class="btn btn-link">Concluido</button>
-              <button class="btn btn-link">
-                <span class="text-error">Remover</span>
-              </button>
-            </div>
-          </div>
-        </div>
+        <toDo v-for="t in toDos" :key="t.id" @toggle="toggleToDo" :toDo="t"/>
+        {{ToDo}}
       </div>
     </div>
 </div>
 </template>
 
 <script>
+import ToDo from "./components/ToDoView.vue"
 
 export default {
   name: 'App',
+  components: {ToDo},
   data(){
     return{
       toDos: [], 
@@ -45,6 +33,13 @@ export default {
         toDo.id = Date.now();
         this.toDos.push(toDo);
         this.toDo = {check: false}
+      },
+      toggleToDo(toDo) {
+        const index = this.toDos.findIndex(item => item.id === toDo.id)
+        if (index > -1) {
+          const check = this.toDos[index].check
+          this.$set(this.toDos, index, check)
+        }
       }
     }
 }
