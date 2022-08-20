@@ -5,7 +5,8 @@
     <router-link to="/hello" >Hello</router-link> | 
     <router-link to="/contador">Contador</router-link> | 
     <router-link to="/encadernar">Encadernar</router-link> | 
-    <router-link to="/condicional">Condicional</router-link>
+    <router-link to="/condicional">Condicional</router-link> | 
+    <router-link to="/lista">Lista</router-link>
   </nav>
   <router-view/>
 </template>

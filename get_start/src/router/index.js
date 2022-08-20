@@ -32,6 +32,11 @@ const routes = [
     name: 'condicional',
     component: () => import('../views/RenderizacaoCondicional.vue')
   },
+  {
+    path: '/lista',
+    name: 'lista',
+    component: () => import('../views/RenderizacaoLista.vue')
+  },
 ]
 
 const router = createRouter({
