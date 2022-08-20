@@ -22,6 +22,11 @@ const routes = [
     name: 'contador',
     component: () => import('../views/Contador.vue')
   },
+  {
+    path: '/encadernar',
+    name: 'encadernar',
+    component: () => import('../views/EncadernarFormulario.vue')
+  },
 ]
 
 const router = createRouter({
