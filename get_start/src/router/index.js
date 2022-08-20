@@ -16,7 +16,12 @@ const routes = [
     path: '/hello',
     name: 'hello',
     component: () => import('../views/HelloWordPage.vue')
-  }
+  },
+  {
+    path: '/contador',
+    name: 'contador',
+    component: () => import('../views/Contador.vue')
+  },
 ]
 
 const router = createRouter({
