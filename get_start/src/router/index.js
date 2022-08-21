@@ -37,6 +37,11 @@ const routes = [
     name: 'lista',
     component: () => import('../views/RenderizacaoLista.vue')
   },
+  {
+    path: '/vigilante',
+    name: 'vigilante',
+    component: () => import('../views/Vigilante.vue')
+  },
 ]
 
 const router = createRouter({
