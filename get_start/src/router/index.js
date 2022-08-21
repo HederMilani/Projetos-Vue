@@ -42,6 +42,11 @@ const routes = [
     name: 'vigilante',
     component: () => import('../views/Vigilante.vue')
   },
+  {
+    path: '/componente',
+    name: 'componente',
+    component: () => import('../views/Componente.vue')
+  },
 ]
 
 const router = createRouter({
