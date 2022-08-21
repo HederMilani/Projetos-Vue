@@ -1,5 +1,5 @@
 <template>
-    <ChildCompVue />
+    <ChildCompVue :msg="greeting" />
 </template>
 
 <script>
@@ -8,6 +8,11 @@
     export default{
         components: {
             ChildCompVue
+        },
+        data() {
+            return {
+                greeting: 'Hello From Father'
+            }
         }
     }
 </script>
