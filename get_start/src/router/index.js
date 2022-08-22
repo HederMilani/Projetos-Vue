@@ -52,6 +52,11 @@ const routes = [
     name: 'componente2',
     component: () => import('../views/Componente2.vue')
   },
+  {
+    path: '/slot',
+    name: 'slot',
+    component: () => import('../views/Slot.vue')
+  }
 ]
 
 const router = createRouter({
