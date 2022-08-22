@@ -8,7 +8,8 @@
     <router-link to="/condicional">Condicional</router-link> | 
     <router-link to="/lista">Lista</router-link> | 
     <router-link to="/vigilante">Vigilante</router-link> | 
-    <router-link to="/componente">Componente</router-link>
+    <router-link to="/componente">Componente</router-link> | 
+    <router-link to="/componente2">Componente 2</router-link>
   </nav>
   <router-view/>
 </template>
