@@ -24,9 +24,11 @@
   </div>
   <br>
   <div class="q-pa-md bg-grey-10 text-white">
-    <q-list dark bordered separator style="max-width: 318px"
-            >
-
+    <q-list dark bordered separator style="max-width: 318px">
+      <q-item class="clickable v-riple" v-for="person in persons " :key="person.id">
+        <q-item-section>{{person.name}}</q-item-section>
+        <q-item-section>{{person.address}}</q-item-section>
+        </q-item>
     </q-list>
   </div>
 </template>
@@ -43,16 +45,13 @@ export default {
     return{
       name: '',
       address: '',
-      person: [{
-        id: '',
-        name: '',
-        address: ''
+      persons: [{id: id ++, name: 'Teste1', address: 'Teste1'
       }]
     }
   },
   methods: {
     save() {
-      this.person.push({
+      this.persons.push({
         id: id++,
         name: this.name,
         address: this.address
